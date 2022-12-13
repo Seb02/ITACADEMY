@@ -1,0 +1,6 @@
+npm install ejs --save
+npm init
+npm install express --save
+npm install nodemon
+npm install
+npm install body-parser

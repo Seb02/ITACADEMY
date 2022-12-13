@@ -1,0 +1,43 @@
+body{
+    width: 900px;
+    height: fit-content;
+    padding: 10px;
+    border: 1px solid black;
+}
+h1{
+    text-align: center;
+    color: blue;
+    font: Andale Mono, monospace;
+
+}
+p{
+    color: darkblue;
+    font: Andale Mono, monospace;
+}
+
+th, td {
+    border: 0.5px solid;
+    
+  }
+  
+  
+  
+  a {
+    background-color: rgb(190, 190, 190);
+    color: green;
+    
+    text-decoration: none;
+    
+  }
+  button {
+    background-color: rgb(190, 190, 190); /* Green */
+    border: none;
+    color: green;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+  }
+
+  

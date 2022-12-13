@@ -1,0 +1,21 @@
+<!--extension ejs language support-->
+<html>
+    <head>
+        <title>ToDoList</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <h1>Liste des tâches </h1>
+        <p>
+        <% for(var i = 0 ; i < tasklist.length; i++) { %>
+            <%= tasklist[i].tasklistcol %> <a href = "/delete/<%=tasklist[i].idtasklist%>">  Supprimer</a><br>  <% } %>
+        </p>
+        <form  method="POST" action="/add">
+            <label>Nouvelle tâche</label><br>
+            <input name = 'newTask' type="text">
+            <input type = "submit" value="Sauver">
+        </form>
+        <label><%= message %> </label>
+    
+    </body>
+</html>

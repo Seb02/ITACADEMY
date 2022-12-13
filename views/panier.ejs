@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>IT Academy</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <h1>Mon panier</h1>
+        
+        <form method="post" action = '/connectPage'>
+            <button type = 'submit'> Se connecter</button>
+        </form>
+        <a href="/">Liste des formations</a>
+        <form method="post" action = '/confirm'>
+            <button type = 'submit'> Confirmer la commande</button>
+        </form>
+        <table>
+        <!-- hyperlien vers une autre page<a href="/"></a> -->
+        <% for (let i = 0; i<formations.length ; i ++){%>     
+            <tr>
+              <td><%= formations[i].Nomformation %></td>
+              <td><%= formations[i].Prix %></td>
+              <td><%= formations[i].Debut %></td>
+              <td><%= formations[i].Fin %></td>
+              <td><a href="/desinscription/<%=formations[i].Nomformation %> ">Se désinscrire</a></td>
+            </tr>
+            
+        
+        <%  } %>
+        <%= message %> 
+    </table>
+    </body>
+</html>
+
+
+
+
