@@ -37,6 +37,6 @@ application.use('/', routes);
 application.use(express.static('public'))
 
 
-application.listen(3000, function(){
+application.listen(80, function(){
     console.log('Server is running on port 3000')
 });
